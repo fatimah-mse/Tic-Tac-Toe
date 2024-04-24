@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const PLAYERX_WON = 'PLAYERX_WON';
     const PLAYERO_WON = 'PLAYERO_WON';
     const TIE = 'TIE';
-    
+
     const winningConditions = [
         [0, 1, 2],
         [3, 4, 5],
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
                 break;
             case TIE:
-                announcer.innerText = 'Tie';
+                announcer.innerText = 'No Winner';
         }
         announcer.classList.remove('hide');
     };
